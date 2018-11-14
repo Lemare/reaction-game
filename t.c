@@ -29,16 +29,10 @@ int main()
     set_falling_edge(&gpio[2]);
     set_falling_edge(&gpio[3]);
     uprints("starting\n");
-    //turnOn();
-    while(1){
-      if(get_pin(&gpio[2]) == 1){
-        turnOn();
-        delay();
-        clear_pin(&gpio[4]);
-      }
-    }
+    turnOn();
 
-/*
+
+
     while(1){
       if(lampIsAan == 1) {
         delay();
@@ -63,5 +57,5 @@ int main()
         }
       }
     }
-*/
+
 }
